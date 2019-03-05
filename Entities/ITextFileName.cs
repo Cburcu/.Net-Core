@@ -2,6 +2,6 @@ namespace HwDIExample
 {
     public interface ITextFileName
     {
-        string FileName {get;}
+        string FileName();
     }
 }

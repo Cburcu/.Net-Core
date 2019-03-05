@@ -11,12 +11,12 @@ namespace HwDIExample
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            superHero = Configuration.GetSection("Hero").GetSection("superhero").Value;
-            superCharacter = Configuration.GetSection("Hero").GetSection("characters").GetSection("character1").Value;
+            pathA = Configuration.GetSection("FilePaths").GetSection("PathA").Value;
+            pathB = Configuration.GetSection("FilePaths").GetSection("PathB").Value;
         }
         public IConfiguration Configuration { get; }
-        public static string superHero;
-        public static string superCharacter;
+        public static string pathA;
+        public static string pathB;
         
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)

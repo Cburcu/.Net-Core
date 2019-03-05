@@ -33,7 +33,7 @@ namespace HwDIExample.Controllers
             var textFileNames = _serviceProvider.GetServices<ITextFileName>();
             foreach (var textFileName in textFileNames)
             {
-                var heroList = GetHeroes.Heroes(textFileName.FileName);
+                var heroList = GetHeroes.Heroes(textFileName.FileName());
                 foreach (var hero in heroList)
                 {
                     heroes.Add(hero);
@@ -43,12 +43,12 @@ namespace HwDIExample.Controllers
             return heroes;
         }
 
-        [HttpGet("{superhero}")]
-        public ActionResult<string> Get(string superhero)
+        [HttpGet("{paths}")]
+        public ActionResult<string> Get(string paths)
         {
-            var superheroname = Startup.superHero;
-            var supercharactername = Startup.superCharacter;
-            return $"{superheroname} - {supercharactername}";
+            var pathA = Startup.pathA;
+            var pathB = Startup.pathB;
+            return $"{pathA} - {pathB}";
         }
         // // GET api/values/5
         // [HttpGet("{id}")]

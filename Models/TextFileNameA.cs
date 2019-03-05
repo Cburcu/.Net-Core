@@ -3,6 +3,9 @@ using System;
 namespace HwDIExample{
     public class TextFileNameA : ITextFileName
     {
-        public string FileName => $"{Environment.CurrentDirectory}/bin/Debug/netcoreapp2.2/A.txt";
+        public string FileName(){
+            string path = Environment.CurrentDirectory + Startup.pathA;
+            return path;
+        }
     }
 }
