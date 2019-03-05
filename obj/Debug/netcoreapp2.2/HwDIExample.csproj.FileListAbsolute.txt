@@ -1,0 +1,14 @@
+C:\Projects\Education\DotNet_Core\HwDIExample\bin\Debug\netcoreapp2.2\HwDIExample.deps.json
+C:\Projects\Education\DotNet_Core\HwDIExample\bin\Debug\netcoreapp2.2\HwDIExample.runtimeconfig.json
+C:\Projects\Education\DotNet_Core\HwDIExample\bin\Debug\netcoreapp2.2\HwDIExample.runtimeconfig.dev.json
+C:\Projects\Education\DotNet_Core\HwDIExample\bin\Debug\netcoreapp2.2\HwDIExample.dll
+C:\Projects\Education\DotNet_Core\HwDIExample\bin\Debug\netcoreapp2.2\HwDIExample.pdb
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.csproj.CoreCompileInputs.cache
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.RazorAssemblyInfo.cache
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.RazorAssemblyInfo.cs
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.AssemblyInfoInputs.cache
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.AssemblyInfo.cs
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.RazorTargetAssemblyInfo.cache
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.dll
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.pdb
+C:\Projects\Education\DotNet_Core\HwDIExample\obj\Debug\netcoreapp2.2\HwDIExample.csprojAssemblyReference.cache

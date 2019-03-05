@@ -1,0 +1,20 @@
+Batman:TBruce Wayne
+Superman:TKal-El
+Flash:TBarry Allen
+Green Lantern:TAlan Scott
+Green Arrow:TOliver Queen
+Wonder Woman:TPrincess Diana
+Martian Manhunter:TMartian Manhunter    
+Robin/Nightwing:TDick Grayson    
+Blue Beetle:TDan Garret    
+Black Canary:TDinah Drake
+Spider Man:TPeter Parker
+Captain America:TSteve Rogers
+Iron Man:TTony Stark
+Thor:TThor Odinson
+Hulk:TBruce Banner
+Wolverine:TJames Howlett
+Daredevil:TMatthew Michael Murdock    
+Hawkeye:TClinton Francis Barton    
+Cyclops:TScott Summers    
+Silver Surfer:TNorrin Radd    
