@@ -1,20 +1,20 @@
-Batman:TBruce Wayne
-Superman:TKal-El
-Flash:TBarry Allen
-Green Lantern:TAlan Scott
-Green Arrow:TOliver Queen
-Wonder Woman:TPrincess Diana
-Martian Manhunter:TMartian Manhunter
-Robin/Nightwing:TDick Grayson
-Blue Beetle:TDan Garret
-Black Canary:TDinah Drake
-Spider Man:TPeter Parker
-Captain America:TSteve Rogers
-Iron Man:TTony Stark
-Thor:TThor Odinson
-Hulk:TBruce Banner
-Wolverine:TJames Howlett
-Daredevil:TMatthew Michael Murdock
-Hawkeye:TClinton Francis Barton
-Cyclops:TScott Summers
-Silver Surfer:TNorrin Radd
+Batman:TTBruce Wayne:1000
+Superman:TTKal-El:1000
+Flash:TTBarry Allen:1000
+Green Lantern:TTAlan Scott:1000
+Green Arrow:TTOliver Queen:1000
+Wonder Woman:TTPrincess Diana:1000
+Martian Manhunter:TTMartian Manhunter:1000
+Robin/Nightwing:TTDick Grayson:1000
+Blue Beetle:TTDan Garret:1000
+Black Canary:TTDinah Drake:1000
+Spider Man:TTPeter Parker:1000
+Captain America:TTSteve Rogers:1000
+Iron Man:TTTony Stark:1000
+Thor:TTThor Odinson:1000
+Hulk:TTBruce Banner:1000
+Wolverine:TTJames Howlett:1000
+Daredevil:TTMatthew Michael Murdock:1000
+Hawkeye:TTClinton Francis Barton:1000
+Cyclops:TTScott Summers:1000
+Silver Surfer:TTNorrin Radd:1000

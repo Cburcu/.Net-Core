@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using HwDIExample.Entities;
+using HwDIExample.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,18 +12,8 @@ namespace HwDIExample.Controllers
     [ApiController]
     public class HeroesController : ControllerBase
     {
-        // private readonly IHero _hero;
-        // private ITextFileName _textFileName;
-        // public HeroesController(IHero hero, ITextFileName textFileName)
-        // {
-        //     _hero = hero;
-        //     _textFileName = textFileName;
-        // }
-
         public IServiceProvider _serviceProvider;
-
         public HeroesController(IServiceProvider serviceProvider)
-
         {
             _serviceProvider = serviceProvider;
         }
@@ -30,26 +23,25 @@ namespace HwDIExample.Controllers
         public ActionResult<List<Hero>> Get()
         {
             List<Hero> heroes = new List<Hero>();
-            var textFileNames = _serviceProvider.GetServices<ITextFileName>();
-            foreach (var textFileName in textFileNames)
+            var textStreams = _serviceProvider.GetServices<IHeroStream>();
+            foreach (var textStream in textStreams)
             {
-                var heroList = GetHeroes.Heroes(textFileName.FileName());
+                var heroList = textStream.Read();
                 foreach (var hero in heroList)
                 {
                     heroes.Add(hero);
                 }
             }
-
             return heroes;
         }
 
-        [HttpGet("{paths}")]
-        public ActionResult<string> Get(string paths)
-        {
-            var pathA = Startup.pathA;
-            var pathB = Startup.pathB;
-            return $"{pathA} - {pathB}";
-        }
+        // [HttpGet("{paths}")]
+        // public ActionResult<string> Get(string paths)
+        // {
+        //     var pathA = Startup.pathA;
+        //     var pathB = Startup.pathB;
+        //     return $"{pathA} - {pathB}";
+        // }
         // // GET api/values/5
         // [HttpGet("{id}")]
         // public ActionResult<string> Get(int id)

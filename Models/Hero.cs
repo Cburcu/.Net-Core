@@ -1,14 +1,12 @@
 using System;
 
-namespace HwDIExample{
+namespace HwDIExample.Models
+{
     public class Hero : IHero
     {
-        public string SuperHero { get; set; }
-        public string Characters { get; set; }
-
-        public void SaveTheWorld(string message)
-        {
-            Console.WriteLine(message);
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Character { get; set; }
+        public int Power { get; set; }
     }
 }

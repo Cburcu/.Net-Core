@@ -5,14 +5,11 @@ namespace HwDIExample
 {
     public class Program
     {
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-        }
+        public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:12345");
+                .UseUrls("http://localhost:11111");
     }
 }
