@@ -12232,11 +12232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Education\\DotNet_Core\\HwDIExample\\HwDIExample.csproj",
+      "projectUniqueName": "c:\\Projects\\Education\\DotNet_Core\\HwDIExample\\HwDIExample.csproj",
       "projectName": "HwDIExample",
-      "projectPath": "C:\\Projects\\Education\\DotNet_Core\\HwDIExample\\HwDIExample.csproj",
+      "projectPath": "c:\\Projects\\Education\\DotNet_Core\\HwDIExample\\HwDIExample.csproj",
       "packagesPath": "C:\\Users\\burcu.atay\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Education\\DotNet_Core\\HwDIExample\\obj\\",
+      "outputPath": "c:\\Projects\\Education\\DotNet_Core\\HwDIExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

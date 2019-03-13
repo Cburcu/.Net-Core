@@ -25,10 +25,10 @@ namespace HwDIExample
             services.AddDbContext<HeroContext>(options =>
                     options.UseNpgsql(connectionString: Configuration.GetConnectionString(name: "DefaultConnection")));
                     
-            services.AddSingleton<IHero, Hero>();
-            // services.AddSingleton<IHeroStream, HeroTextStream>();
-            services.AddSingleton<IHeroStream, HeroPostgreSqlStream>();
-            // services.AddSingleton<IHeroStream, HeroServiceStream>();
+            // services.AddSingleton<IHero, Hero>();
+            // services.AddScoped<IHeroStream, HeroTextStream>();
+            // services.AddScoped<IHeroStream, HeroPostgreSqlStream>();
+            services.AddScoped<IHeroStream, HeroServiceStream>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

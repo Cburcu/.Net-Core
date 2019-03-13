@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using HwDIExample.Entities;
 using HwDIExample.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace HwDIExample.Controllers
 {
@@ -12,10 +15,12 @@ namespace HwDIExample.Controllers
     [ApiController]
     public class HeroesController : ControllerBase
     {
-        public IServiceProvider _serviceProvider;
-        public HeroesController(IServiceProvider serviceProvider)
+        public IServiceScopeFactory _serviceScopeFactory;
+        // public IServiceProvider _serviceProvider;
+        public HeroesController(IServiceProvider serviceProvider, IServiceScopeFactory serviceScopeFactory)
         {
-            _serviceProvider = serviceProvider;
+            // _serviceProvider = serviceProvider;
+            _serviceScopeFactory = serviceScopeFactory;
         }
 
         // GET api/heroes
@@ -23,13 +28,17 @@ namespace HwDIExample.Controllers
         public ActionResult<List<Hero>> Get()
         {
             List<Hero> heroes = new List<Hero>();
-            var textStreams = _serviceProvider.GetServices<IHeroStream>();
-            foreach (var textStream in textStreams)
+            using (var scope = _serviceScopeFactory.CreateScope())
             {
-                var heroList = textStream.Read();
-                foreach (var hero in heroList)
+                var streams = scope.ServiceProvider.GetServices<IHeroStream>();
+                // var streams = _serviceProvider.GetServices<IHeroStream>();
+                foreach (var stream in streams)
                 {
-                    heroes.Add(hero);
+                    var heroList = stream.Read();
+                    foreach (var hero in heroList)
+                    {
+                        heroes.Add(hero);
+                    }
                 }
             }
             return heroes;
